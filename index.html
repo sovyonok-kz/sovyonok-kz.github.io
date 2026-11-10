@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Совёнок — помощник с домашкой</title>
+<meta name="description" content="Совёнок — говорящий помощник с домашкой для 0–4 классов. Для Windows, без интернета и рекламы.">
+<style>
+  :root { --ink: #2A1066; --pink: #FF3D7F; --orange: #FF7A00; --bg1: #FFE9A8; --bg2: #FFC27A; --card: #FFFFFF; --line: #8E5CF5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); font: 18px/1.5 "Segoe UI", system-ui, sans-serif;
+    background: linear-gradient(160deg, var(--bg1), var(--bg2)); min-height: 100vh; }
+  main { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
+  .card { background: var(--card); border: 4px solid var(--line); border-radius: 26px; padding: 22px; margin-top: 18px;
+    box-shadow: 0 8px 22px rgba(80, 30, 140, .15); }
+  h1 { margin: 0; font-size: clamp(30px, 7vw, 46px); font-weight: 900; line-height: 1.1; }
+  h1 .pink { color: var(--pink); } h1 .orange { color: var(--orange); }
+  .lead { font-size: 21px; font-weight: 700; margin: 10px 0 0; }
+  ul { padding-left: 22px; margin: 6px 0 0; } li { margin: 8px 0; font-weight: 600; }
+  .btn { display: block; text-align: center; text-decoration: none; color: #fff; font-weight: 900; font-size: 22px;
+    padding: 16px 20px; border-radius: 22px; background: linear-gradient(90deg, var(--pink), var(--orange)); margin-top: 14px; }
+  .btn.wa { background: linear-gradient(90deg, #00C853, #00A3E0); }
+  .muted { font-size: 15px; opacity: .8; }
+  a.plain { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>ДОМАШКА <span class="orange">без</span> СТРЕССА <span class="orange">и</span> <span class="pink">РЕПЕТИТОРОВ!</span></h1>
+    <p class="lead">Совёнок — говорящий помощник с домашкой для 0–4 классов.</p>
+    <ul>
+      <li>НЕ делает ЗА ребёнка, а помогает сделать домашку самостоятельно</li>
+      <li>Для классов с казахским или русским языком обучения — по программе Казахстана</li>
+      <li>Без интернета и рекламы — ничто не отвлекает</li>
+      <li>Игры и награды — заниматься интересно</li>
+      <li>Ребёнок называет задание голосом или печатает — Совёнок по шагам объясняет, как выполнять</li>
+      <li>Читает задания вслух — удобно, если ребёнок ещё учится читать</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <b>Совёнок работает на компьютере или ноутбуке с Windows.</b>
+    <a class="btn" href="https://apps.microsoft.com/detail/9ND668Z4KKWQ">Открыть в Microsoft Store</a>
+    <a class="btn wa" href="https://wa.me/?text=https%3A%2F%2Fapps.microsoft.com%2Fdetail%2F9ND668Z4KKWQ">Отправить ссылку себе в WhatsApp</a>
+    <p class="muted">Открыли страницу с телефона? Отправьте ссылку себе и откройте её на компьютере — или на компьютере откройте Microsoft Store и найдите «Совёнок».</p>
+  </div>
+
+  <p class="muted">Вопросы — WhatsApp: +7 701 918 5254 · <a class="plain" href="privacy.html">Политика конфиденциальности</a></p>
+</main>
+</body>
+</html>
