@@ -1,52 +1,78 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Совёнок — помощник с домашкой</title>
-<meta name="description" content="Совёнок — говорящий помощник с домашкой для 0–4 классов. Для Windows, без интернета и рекламы.">
-<style>
-  :root { --ink: #2A1066; --pink: #FF3D7F; --orange: #FF7A00; --bg1: #FFE9A8; --bg2: #FFC27A; --card: #FFFFFF; --line: #8E5CF5; }
-  * { box-sizing: border-box; }
-  body { margin: 0; color: var(--ink); font: 18px/1.5 "Segoe UI", system-ui, sans-serif;
-    background: linear-gradient(160deg, var(--bg1), var(--bg2)); min-height: 100vh; }
-  main { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
-  .card { background: var(--card); border: 4px solid var(--line); border-radius: 26px; padding: 22px; margin-top: 18px;
-    box-shadow: 0 8px 22px rgba(80, 30, 140, .15); }
-  h1 { margin: 0; font-size: clamp(30px, 7vw, 46px); font-weight: 900; line-height: 1.1; }
-  h1 .pink { color: var(--pink); } h1 .orange { color: var(--orange); }
-  .lead { font-size: 21px; font-weight: 700; margin: 10px 0 0; }
-  ul { padding-left: 22px; margin: 6px 0 0; } li { margin: 8px 0; font-weight: 600; }
-  .btn { display: block; text-align: center; text-decoration: none; color: #fff; font-weight: 900; font-size: 22px;
-    padding: 16px 20px; border-radius: 22px; background: linear-gradient(90deg, var(--pink), var(--orange)); margin-top: 14px; }
-  .btn.wa { background: linear-gradient(90deg, #00C853, #00A3E0); }
-  .muted { font-size: 15px; opacity: .8; }
-  a.plain { color: var(--ink); }
-</style>
-</head>
-<body>
-<main>
-  <div class="card">
-    <h1>ДОМАШКА <span class="orange">без</span> СТРЕССА <span class="orange">и</span> <span class="pink">РЕПЕТИТОРОВ!</span></h1>
-    <p class="lead">Совёнок — говорящий помощник с домашкой для 0–4 классов.</p>
-    <ul>
-      <li>НЕ делает ЗА ребёнка, а помогает сделать домашку самостоятельно</li>
-      <li>Для классов с казахским или русским языком обучения — по программе Казахстана</li>
-      <li>Без интернета и рекламы — ничто не отвлекает</li>
-      <li>Игры и награды — заниматься интересно</li>
-      <li>Ребёнок называет задание голосом или печатает — Совёнок по шагам объясняет, как его выполнить</li>
-      <li>Читает задания вслух — удобно, если ребёнок ещё учится читать</li>
-    </ul>
-  </div>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Домашка с Совёнком — помощник с домашкой</title><meta name="description" content="Домашка с Совёнком — говорящий помощник с домашкой для детей 0–4 класса (Windows).">
+<link rel="icon" href="img/owl.png"><style>
+:root{--ink:#2B1D4F;--pink:#FF3D7F;--bg:#F7F2FF;--card:#fff;--muted:#5A4B8C}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ink:#EDE7FF;--bg:#1B1530;--card:#261E40;--muted:#B9AEE0}}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:16px}
+header{display:flex;gap:16px;align-items:center;padding:24px 0}
+header img{width:96px;height:96px}
+h1{font-size:30px;margin:0}h2{font-size:24px;margin:32px 0 12px}
+.lead{color:var(--muted);font-size:18px;margin:4px 0 0}
+.card{background:var(--card);border-radius:20px;padding:20px;box-shadow:0 4px 18px rgba(60,30,120,.10);margin:12px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.shots img{width:100%;border-radius:14px;display:block}
+ul{padding-left:22px}li{margin:4px 0}
+.price{font-size:28px;font-weight:800;color:var(--pink)}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:14px;margin:6px 8px 0 0}
+.btn.alt{background:#7C4DFF}
+table{border-collapse:collapse;width:100%}td{padding:6px 8px;vertical-align:top;border-bottom:1px solid rgba(120,90,200,.15)}
+td:first-child{color:var(--muted);width:40%}
+footer{color:var(--muted);font-size:14px;padding:24px 0}
+.oferta p{margin:8px 0}.oferta h2{font-size:20px}
+</style></head><body><div class="wrap">
+<header><img src="img/owl.png" alt="Совёнок"><div><h1>Домашка с Совёнком</h1>
+<p class="lead">Говорящий помощник с домашкой для детей 0–4 класса. По программе Казахстана, на русском и казахском.</p></div></header>
 
-  <div class="card">
-    <b>Совёнок работает на компьютере или ноутбуке с Windows.</b>
-    <a class="btn" href="https://apps.microsoft.com/detail/9ND668Z4KKWQ">Открыть в Microsoft Store</a>
-    <a class="btn wa" href="https://wa.me/?text=https%3A%2F%2Fapps.microsoft.com%2Fdetail%2F9ND668Z4KKWQ">Отправить ссылку себе в WhatsApp</a>
-    <p class="muted">Открыли страницу с телефона? Отправьте ссылку себе и откройте её на компьютере — или на компьютере откройте Microsoft Store и найдите «Совёнок».</p>
-  </div>
+<div class="card"><p>Совёнок не делает домашку за ребёнка — он помогает решить самостоятельно: ребёнок называет задание голосом или печатает,
+а Совёнок ведёт по шагам, подсказывает и хвалит.</p>
+<ul>
+<li>Объясняет темы через увлечения ребёнка: космос, животные, футбол, машины, принцессы…</li>
+<li>Читает задания вслух — удобно, если ребёнок ещё учится читать.</li>
+<li>«Читаем вместе» и «Пишем вместе» — по школьному букварю, рукописные буквы.</li>
+<li>Игры с проверкой знаний, игры для малышей 3–4 лет, «Рисуем вместе», «Сделай руками», «Лепим вместе».</li>
+<li>Пёрышки, грамоты, отчёт для родителей.</li>
+<li>После установки работает без интернета. Без рекламы.</li>
+</ul></div>
 
-  <p class="muted">Вопросы — WhatsApp: +7 701 918 5254 · <a class="plain" href="privacy.html">Политика конфиденциальности</a></p>
-</main>
-</body>
-</html>
+<div class="shots"><img src="img/home.jpg" alt="Главный экран"><img src="img/solve.jpg" alt="Решаем задачу по шагам"><img src="img/games.jpg" alt="Игры"></div>
+
+<h2>Стоимость</h2>
+<div class="card"><p class="price">19 900 ₸</p>
+<p>Бессрочная лицензия на 1 компьютер. Покупка один раз, без подписки и скрытых платежей. Перед покупкой — <b>3 дня бесплатно</b>.</p>
+<a class="btn" href="https://apps.microsoft.com/detail/9ND668Z4KKWQ">Microsoft Store</a><a class="btn alt" href="https://t.me/sovyonok_kz">Telegram-канал</a></div>
+
+<h2>Как получить программу</h2>
+<div class="card"><ol>
+<li><b>Через Microsoft Store:</b> на компьютере откройте Microsoft Store → поиск «Совёнок» → «Получить». Оплата — в Microsoft Store.</li>
+<li><b>Напрямую:</b> после оплаты через платёжный сервис Robokassa.kz индивидуальный ключ активации и ссылка на установщик приходят
+на e-mail и (или) в Telegram-бот, как правило в течение 5 минут. Ключ вводится в программе: «Кабинет родителя» → «Ввести ключ».</li>
+</ol><p>Товар цифровой, доставляется в электронном виде, без материального носителя.</p></div>
+
+<h2>Возврат денежных средств</h2>
+<div class="card"><ul>
+<li>Если программа не запускается, не активируется или не выполняет функции из описания и мы не устранили проблему за 3 рабочих дня —
+вернём деньги полностью.</li>
+<li>Если ключ ещё не активирован — вернём деньги в течение 14 календарных дней с момента оплаты.</li>
+<li>После активации ключа программа надлежащего качества возврату не подлежит (до покупки её можно бесплатно попробовать 3 дня).</li>
+</ul><p>Подробно — в <a href="oferta.html">договоре публичной оферты</a>, раздел 6. Покупки в Microsoft Store возвращаются по правилам Microsoft.</p></div>
+
+<h2>Системные требования</h2>
+<div class="card"><table>
+<tr><td>Система</td><td>Windows 10 или 11, 64-бит</td></tr>
+<tr><td>Место на диске</td><td>около 6 ГБ</td></tr>
+<tr><td>Память</td><td>от 4 ГБ</td></tr>
+<tr><td>Интернет</td><td>нужен для скачивания и активации; дальше основные функции работают без интернета</td></tr>
+</table></div>
+
+<h2>Контакты и реквизиты</h2>
+<div class="card"><table>
+<tr><td>Продавец</td><td>Индивидуальный предприниматель [ФИО полностью]</td></tr>
+<tr><td>ИИН</td><td>[ИИН]</td></tr>
+<tr><td>Адрес</td><td>[Адрес регистрации ИП]</td></tr>
+<tr><td>Телефон / WhatsApp</td><td>[Телефон]</td></tr>
+<tr><td>Электронная почта</td><td>[E-mail поддержки]</td></tr>
+<tr><td>Telegram</td><td><a href="https://t.me/sovyonok_kz">t.me/sovyonok_kz</a></td></tr>
+</table></div>
+
+<footer>© 2026 ИП [ФИО полностью] · <a href="oferta.html">Договор публичной оферты</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="https://t.me/sovyonok_kz">Telegram</a></footer></div></body></html>
